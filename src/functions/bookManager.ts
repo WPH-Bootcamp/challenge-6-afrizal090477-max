@@ -21,3 +21,29 @@
 // Petunjuk: jika parameter title diberikan, cari buku yang cocok
 //           jika tidak diberikan, tampilkan semua buku atau berikan informasi yang sesuai
 
+import {Book} from "../types";  
+import {books} from "../data/books";
+
+// add book
+export function addBook(book: Book): void  {
+books.push(book);
+console.log(`Buku "${book.title}" berhasil ditambahkan`);
+}
+
+// list book
+export function listBooks(): void {
+    if (books.length === 0) {
+        console.log("Belum ada buku.");
+        return;
+    }
+console.log("Daftar Buku :");
+books.forEach((book, index) =>{
+    console.log(
+        `${index + 1}. ${book.title} - ${book.author} (${book.publicationYear})`
+    );
+});
+}
+
+
+
+
