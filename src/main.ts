@@ -15,16 +15,28 @@ console.log("=====================================");
 import { addBook, listBooks, searchBook } from "./functions/bookManager";
 
 addBook({
-  title: "Clean Code",
-  author: "Robert C. Martin",
-  publicationYear: 2008,
+  title: "Learn TypeScrypt",
+  author: "Anders Hejlsberg",
+  publicationYear: 2012,
 });
 
 addBook({
-  title: "Atomic Habits",
-  author: "James Clear",
-  publicationYear: 2018,
+  title: "Learn JavaScript",
+  author: "Brendan Eich",
+  publicationYear: 1955,
 });
+
+addBook({
+    title: "Learn React JS",
+    author: "Jordan Walke",
+    publicationYear: 2013,
+})
+
+addBook ({
+    title: "Learn Tailwind CSS",
+    author: "Adam Wathan",
+    publicationYear: 2017,
+})
 
 listBooks();
 
