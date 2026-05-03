@@ -12,3 +12,21 @@ console.log("=====================================");
 
 // Mulai pengujian di bawah ini
 
+import { addBook, listBooks, searchBook } from "./functions/bookManager";
+
+addBook({
+  title: "Clean Code",
+  author: "Robert C. Martin",
+  publicationYear: 2008,
+});
+
+addBook({
+  title: "Atomic Habits",
+  author: "James Clear",
+  publicationYear: 2018,
+});
+
+listBooks();
+
+searchBook("clean");
+searchBook();
