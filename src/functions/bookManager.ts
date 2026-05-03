@@ -44,6 +44,31 @@ books.forEach((book, index) =>{
 });
 }
 
+//  search book
+
+export function searchBook(title?: string): void {
+  if (!title) {
+    console.log("Menampilkan semua buku:");
+    listBooks();
+    return;
+  }
+
+  const result = books.filter((book) =>
+    book.title.toLowerCase().includes(title.toLowerCase())
+  );
+
+  if (result.length === 0) {
+    console.log("Buku tidak ditemukan.");
+    return;
+  }
+
+  console.log("Hasil pencarian:");
+  result.forEach((book, index) => {
+    console.log(
+      `${index + 1}. ${book.title} - ${book.author} (${book.publicationYear})`
+    );
+  });
+}
 
 
 
