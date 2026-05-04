@@ -36,7 +36,7 @@ export function listBooks(): void {
         console.log("Belum ada buku.");
         return;
     }
-console.log("Daftar Buku :");
+console.log("Daftar Buku:");
 books.forEach((book, index) =>{
     console.log(
         `${index + 1}. ${book.title} - ${book.author} (${book.publicationYear})`
