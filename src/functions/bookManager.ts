@@ -49,7 +49,6 @@ books.forEach((book, index) =>{
 export function searchBook(title?: string): void {
   if (!title) {
     console.log("Masukkan keyword untuk mencari buku:");
-    listBooks()
     return;
   }
 
