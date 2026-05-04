@@ -7,15 +7,16 @@
 //   4. Uji fungsi searchBook dengan dan tanpa parameter
 // Silakan bereksplorasi untuk memastikan semua fungsi berjalan dengan baik
 
-console.log("Book Management Application - Week 6");
-console.log("=====================================");
 
 // Mulai pengujian di bawah ini
 
 import { addBook, listBooks, searchBook } from "./functions/bookManager";
 
+console.log("Book Management Application - Week 6");
+console.log("=====================================");
+
 addBook({
-  title: "Learn TypeScrypt",
+  title: "Learn TypeScript",
   author: "Anders Hejlsberg",
   publicationYear: 2012,
 });
@@ -39,6 +40,4 @@ addBook ({
 })
 
 listBooks();
-
-searchBook("clean");
 searchBook();

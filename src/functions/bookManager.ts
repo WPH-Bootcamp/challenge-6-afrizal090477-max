@@ -48,15 +48,14 @@ books.forEach((book, index) =>{
 
 export function searchBook(title?: string): void {
   if (!title) {
-    console.log("Menampilkan semua buku:");
-    listBooks();
+    console.log("Masukkan keyword untuk mencari buku:");
+    listBooks()
     return;
   }
 
   const result = books.filter((book) =>
     book.title.toLowerCase().includes(title.toLowerCase())
   );
-
   if (result.length === 0) {
     console.log("Buku tidak ditemukan.");
     return;
